@@ -1,3 +1,4 @@
+"  vim: filetype=vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """
 """ Ben Bleything's Vim Setup
@@ -28,6 +29,9 @@ autocmd FileType ruby compiler ruby
 
 " don't show whitespace in help files
 autocmd FileType help set nolist
+
+"don't show whitespace in conque
+autocmd FileType conque_term set nolist
 
 " twiki files
 autocmd BufNewFile,BufRead *.twiki set filetype=twiki

@@ -1,3 +1,4 @@
+"  vim: filetype=vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """
 """ Ben Bleything's Vim Setup
@@ -12,6 +13,17 @@
 """ K E Y   B I N D I N G S
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader=',' " set leader to ,
+
+" Use Tab to completion or inserting a tab
+
+function! CleverTab()
+    if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
+        return "\<Tab>"
+    else
+        return "\<C-N>"
+endfunction
+
+inoremap <Tab> <C-R>=CleverTab()<CR>
 
 " format paragraphs (72 columns)
 map ^^ {!}par w72qrg<CR>
