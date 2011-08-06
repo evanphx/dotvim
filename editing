@@ -37,7 +37,7 @@ set expandtab     " no tabs, just spaces kthx.
 " file, which keeps overrides from being persistent
 autocmd FileType * set softtabstop=2 shiftwidth=2 tabstop=2 expandtab
 
-set list                     " show whitespace
+"set list                     " show whitespace
 set listchars=tab:»·,trail:· " show tabs and trailing spaces
 set listchars+=extends:»     " show a » when a line goes off the right
                              " edge of the screen
@@ -47,12 +47,12 @@ set listchars+=precedes:«    " show a « when a line goes off the left
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ F O L D I N G   O P T I O N S
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set foldenable       " enable folding
+set nofoldenable       " disable folding
 "set foldlevelstart=0 " start with all folds collapsed when switching
                      " buffers
-set foldcolumn=2     " adds two columns of fold status on the left-hand
+"set foldcolumn=0     " adds two columns of fold status on the left-hand
                      " side of the screen
-set foldmethod=syntax
+"set foldmethod=syntax
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ S E A R C H   O P T I O N S

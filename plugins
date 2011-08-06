@@ -13,10 +13,22 @@
 """ P L U G I N   O P T I O N S
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+""" a
+let g:alternateNoDefaultAlternate = 1
+
+let g:ackprg="ack"
+
 """ bufexplorer
 " let g:bufExplorerDetailedHelp=1     " show full help text by default
 let g:bufExplorerShowRelativePath=1 " use relative paths
 " let g:bufExplorerShowUnlisted=1     " display unlisted buffers
+
+" let ruby_no_expensive = 1
+
+" replace the normal word movement keys with smart versions
+map <silent> w <Plug>CamelCaseMotion_w
+map <silent> b <Plug>CamelCaseMotion_b
+map <silent> e <Plug>CamelCaseMotion_e
 
 """ NERDCommenter
 let NERDCreateDefaultMappings=0 " disable default mappings
