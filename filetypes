@@ -40,3 +40,6 @@ autocmd BufNewFile,BufRead *.twiki set filetype=twiki
 autocmd BufNewFile,BufRead ~/.vim/*  setfiletype vim
 autocmd BufNewFile,BufRead ~/.mutt/* setfiletype muttrc
 autocmd BufNewFile,BufRead ~/.bash/* setfiletype sh
+
+" For jekylly markdown files
+autocmd BufNewFile,BufRead *.markdown syntax match Comment /\%^---\_.\{-}---$/
