@@ -36,6 +36,7 @@ let NERDMenuMode=0              " disable menu
 let NERDSpaceDelims=1           " place spaces after comment chars
 let NERDDefaultNesting=0        " don't recomment commented lines
 
+
 map <leader>cc <plug>NERDCommenterToggle
 map <leader>cC <plug>NERDCommenterSexy
 map <leader>cu <plug>NERDCommenterUncomment
@@ -49,3 +50,8 @@ map <leader>a :Tabularize /=>\?<cr>
 
 """ Taglist
 map <leader>t :TlistToggle<cr>
+
+set omnifunc=syntaxcomplete#Complete
+
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabClosePreviewOnPopupClose = 1

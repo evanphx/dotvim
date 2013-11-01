@@ -20,6 +20,8 @@ set showmatch   " flash the matching bracket on inserting a )]} etc
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
+set autowrite
+
 set autoindent " automatically indent new lines
 """ FIXME: everything works as expected without these, I'm sure
 """        that I'm just missing something
@@ -43,6 +45,9 @@ set listchars+=extends:»     " show a » when a line goes off the right
                              " edge of the screen
 set listchars+=precedes:«    " show a « when a line goes off the left
                              " edge of the screen
+
+" only show the menu on completions
+set completeopt=menu
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ F O L D I N G   O P T I O N S

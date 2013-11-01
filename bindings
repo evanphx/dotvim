@@ -16,14 +16,14 @@ let mapleader=',' " set leader to ,
 
 " Use Tab to completion or inserting a tab
 
-function! CleverTab()
-    if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
-        return "\<Tab>"
-    else
-        return "\<C-N>"
-endfunction
+" function! CleverTab()
+    " if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
+        " return "\<Tab>"
+    " else
+        " return "\<C-N>"
+" endfunction
 
-inoremap <Tab> <C-R>=CleverTab()<CR>
+" inoremap <Tab> <C-R>=CleverTab()<CR>
 
 " format paragraphs (72 columns)
 map ^^ {!}par w72qrg<CR>
@@ -40,6 +40,7 @@ map <leader>] :bnext<CR>
 
 " shortcut to compile/run the current file
 map <leader>r :w<CR>:make %<CR>
+map <leader>m :make<CR>:cw<CR>
 
 " shortcut to strip trailing whitespace
 map <leader>s :s/\s\+$//g<CR>
