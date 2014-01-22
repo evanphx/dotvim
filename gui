@@ -11,7 +11,10 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ G U I   O P T I O N S
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-colorscheme molokai
+set background=light
+colorscheme solarized
+
+" colorscheme molokai
 set mouse=a                 " use mouse when possible
 set guifont=Menlo\ Regular:h12 " Inconsolata, 16pt high
 
