@@ -55,3 +55,5 @@ set omnifunc=syntaxcomplete#Complete
 
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabClosePreviewOnPopupClose = 1
+
+autocmd BufWritePre *.go Fmt
