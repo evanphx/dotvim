@@ -52,3 +52,4 @@ map <Leader>ss :ConqueTermSplit zsh<CR>
 
 map <Leader>sx :ConqueTermSplit<SPACE>
 
+au FileType go map <Leader>i :GoInfo<CR>
