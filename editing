@@ -71,6 +71,10 @@ set hlsearch   " highlight searches
 " Use Control-N to clear the highlighted search
 nmap <silent> <C-N> :silent noh<CR>
 
+augroup MRISettings
+au BufRead,BufNewFile ~/git/ruby/*.[ch] setl tabstop=8 shiftwidth=4 softtabstop=4 noexpandtab
+augroup END
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ S W A P   O P T I O N S
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
