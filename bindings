@@ -48,6 +48,8 @@ map <leader>s :s/\s\+$//g<CR>
 " Open a vertical split
 map <leader>v <C-W>v
 
+inoremap <C-CR> <ESC>
+
 map <Leader>ss :ConqueTermSplit zsh<CR>
 
 map <Leader>sx :ConqueTermSplit<SPACE>
