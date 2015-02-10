@@ -16,7 +16,19 @@ task :default do
   puts "  $ rake update:bundles"
 end
 
-namespace :update do
+Subtree = Struct.new(:name, :url)
+
+SUBTREES = {
+  "vim-go" => "git@github.com:fatih/vim-go.git"
+}
+
+task :update do
+  SUBTREES.each do |name, path|
+    sh "git subtree pull --prefix bundle/#{name} #{path} master --squash"
+  end
+end
+
+namespace :old_update do
 
   BUNDLES = {
     # plugins
