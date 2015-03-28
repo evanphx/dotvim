@@ -16,11 +16,14 @@ colorscheme solarized
 
 " colorscheme molokai
 set mouse=a                 " use mouse when possible
-set guifont=Menlo\ Regular:h12 " Inconsolata, 16pt high
+set gfn=DejaVu\ Sans\ Mono\ for\ Powerline:h12
+" set guifont=Inconsolata\ for\ Powerline:h12 " Menlo\ Regular:h12 " Inconsolata, 16pt high
 
 " set default window size
 set columns=180
 set lines=48
+
+let g:airline_powerline_fonts = 1
 
 " GUI option string.  Values:
 "   a: visual-mode selections go to the clipboard
