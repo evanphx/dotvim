@@ -63,7 +63,7 @@ let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_fmt_command = "goimports"
-
+let g:go_autodetect_gopath = 1
 """ Unite
 
 let g:unite_data_directory='~/.vim/.cache/unite'
