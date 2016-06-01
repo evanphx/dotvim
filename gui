@@ -11,10 +11,10 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ G U I   O P T I O N S
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set background=light
-colorscheme solarized
+set background=dark
+" colorscheme solarized
 
-" colorscheme molokai
+colorscheme molokai
 set mouse=a                 " use mouse when possible
 set gfn=DejaVu\ Sans\ Mono\ for\ Powerline:h12
 " set guifont=Inconsolata\ for\ Powerline:h12 " Menlo\ Regular:h12 " Inconsolata, 16pt high
